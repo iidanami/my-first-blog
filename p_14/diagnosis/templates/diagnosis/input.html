@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8"/>
+        <title>診断アプリ</title>
+    </head>
+    <body>
+        <center>
+            <h1>
+                <font face="ＭＳ Ｐ明朝,ＭＳ 明朝">今日のアナタの運勢</font>
+            </h1>
+    
+            <form method="post" action="output.html">
+                {% csrf_token %}
+                おなまえをかいてよね<br>
+                <input type="text" name="name">
+                <input type="submit" value="占う">
+            </form>
+        </center>
+    </body>
+</html>
